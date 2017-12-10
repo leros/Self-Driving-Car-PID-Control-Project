@@ -38,7 +38,7 @@ int main()
 	 float Kp, Ki, Kd;
 	 Kp = 0.2;  // Proportional control
 	 Ki = 0.004; // Integral control
-	 Kd = 3; // Derivative control
+	 Kd = 5; // Derivative control
 
     // "42" at the start of the message means there's a websocket message event.
     // The 4 signifies a websocket message
@@ -72,7 +72,7 @@ int main()
 
           json msgJson;
           msgJson["steering_angle"] = steer_value;
-          msgJson["throttle"] = 0.3;
+          msgJson["throttle"] = 0.5;
           auto msg = "42[\"steer\"," + msgJson.dump() + "]";
           std::cout << msg << std::endl;
           ws.send(msg.data(), msg.length(), uWS::OpCode::TEXT);
