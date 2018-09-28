@@ -1,8 +1,15 @@
-# CarND-Controls-PID
-Self-Driving Car Engineer Nanodegree Program
+[![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
+
+
+### PART 2: Sensor Fusion, Localization, and Control
+### Project 4: PID Controller
+
+In this project, I revisit the lake race track from the Behavioral Cloning Project. This time, however, I implement a PID controller in C++ to maneuver the vehicle around the track.
+
+The simulator will provide me the cross track error (CTE) and the velocity (mph) in order to compute the appropriate steering angle.
 
 ---
-### the effect of the P, I, D component of the PID algorithm
+### The effect of the P, I, D component of the PID algorithm
 
 - P: the proportional component. It depends on the cross track error(or cte) and determines the ratio of output response to the error signal.
 - I: the integral component. It sums the error term over time and helps fix the systematic bias.
